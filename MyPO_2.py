@@ -78,7 +78,7 @@ style.configure("TLabelframe", padding=10)
 style.configure("TLabelframe.Label", foreground="DarkGreen", font=("Time New Roman", 14))
 
 group_1 = ttk.LabelFrame(window, text="Криптовалюта:")
-group_1.pack(fill="both", expand="yes")
+group_1.pack(fill="both", expand=True)
 
 kripto_combobox = ttk.Combobox(group_1, values=list(kriptoval.keys()))
 kripto_combobox.grid(row=0, column=0, columnspan=1, sticky="ew")
@@ -88,7 +88,7 @@ k_label = ttk.Label(group_1)
 k_label.grid(row=1, column=0, columnspan=1, sticky="ew")
 
 group_2 = ttk.LabelFrame(window, text="Валюта:")
-group_2.pack(fill="both", expand="yes")
+group_2.pack(fill="both", expand=True)
 
 val_combobox = ttk.Combobox(group_2, values=list(valuti.keys()))
 val_combobox.grid(row=0, column=0, columnspan=1, sticky="ew")
@@ -98,7 +98,7 @@ v_label = ttk.Label(group_2)
 v_label.grid(row=1, column=0, columnspan=1, sticky="ew")
 
 group_3 = ttk.LabelFrame(window, text="Курс:")
-group_3.pack(fill="both", expand="yes")
+group_3.pack(fill="both", expand=True)
 
 finish_label = ttk.Label(group_3)
 finish_label.grid(row=1, column=0, columnspan=1, sticky="ew")
