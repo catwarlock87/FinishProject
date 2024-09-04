@@ -31,6 +31,7 @@ def new_k_label(event):
     code = kripto_combobox.get()
     name = kriptoval[code]
     k_label.config(text=name)
+    finish_label.config(text="")
 
 
 # Получаем полное название валюты из словаря и обновляем метку
@@ -38,6 +39,7 @@ def new_v_label(event):
     code = val_combobox.get()
     name = valuti[code]
     v_label.config(text=name)
+    finish_label.config(text="")
 
 
 # Словарь кодов криптовалют, символов (если есть) и их полных названий
